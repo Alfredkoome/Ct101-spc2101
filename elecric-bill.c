@@ -7,19 +7,9 @@
 
 #include<stdio.h>
 
-int calculateElectricBill(void);
+int calculateElectricBill(int unit) {
+    int totalBill;
 
-int main() {
-    int totalBill = calculateElectricBill();
-    printf("Total Bill = %d", totalBill);
-    return 0;
-}
-
-int calculateElectricBill() {
-    int unit, totalBill;
-
-    printf("Enter number of unit consumed:");
-    scanf("%d", &unit);
 
     if (unit <= 100) {
         totalBill = unit * 10;
@@ -29,5 +19,15 @@ int calculateElectricBill() {
         totalBill = (100 * 10) + (100 * 15) + (unit - 200) * 20;
     }
     return totalBill;
+}
+
+int main() {
+    int unit;
+    printf("Enter number of unit consumed:");
+    scanf("%d", &unit);
+
+    int totalBill = calculateElectricBill(unit);
+    printf("Total Bill = %d", totalBill);
+    return 0;
 }
 
