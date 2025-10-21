@@ -2,7 +2,7 @@
 /*
 Name:Alfred koome
 adm:CT101/g/26551/25
-Description:c program to calculate fare
+Description:c program to change fahrenheit to celsious
 */
 
 #include<stdio.h>
