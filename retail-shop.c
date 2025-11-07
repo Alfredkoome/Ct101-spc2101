@@ -8,7 +8,7 @@ discription:a simple c program for a small retail shop
 int main() {
     FILE *fptr;
     float amount, total = 0.0;
-    fptr = fopen("C:\\Users\\USER\\OneDrive\\Documents\\Ct101-spc2101\\sales.txt", "r");
+    fptr = fopen("C:\\Users\\USER\\OneDrive\\Documents\\Ct101-spc2101.sales.txt", "r");
     if (fptr == NULL) {
         printf("Error: Could not open file 'sales.txt'.\n");
         return 1;
@@ -21,3 +21,4 @@ int main() {
 
     return 0;
 }
+
