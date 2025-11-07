@@ -7,7 +7,7 @@ Name:Alfred Koome
 int main() {
     char textbook[50];
     FILE *fptr;
-    fptr=fopen("C:\\Users\\USER\\Documents\\Ct101-spc2101\\borrowed_books.txt","a");
+    fptr=fopen("C:\\Users\\USER\\Documents\\Ct101-spc2101.borrowed_books.txt","a");
 
     if (fptr==NULL) {
         printf("could not open file\n");
@@ -19,4 +19,5 @@ int main() {
     fclose(fptr);
     printf("the results as beeing displayed in the borrowed_book.txt file");
     return 0;
+
 }
