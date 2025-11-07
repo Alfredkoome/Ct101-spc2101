@@ -8,7 +8,7 @@ int main() {
     FILE *fptr;
     int marks, registration_number;
     char name[50];
-    fptr = fopen("C:\\Users\\USER\\OneDrive\\Documents\\Ct101-spc2101\\results.dat", "a");
+    fptr = fopen("C:\\Users\\USER\\OneDrive\\Documents\\Ct101-spc2101.results.dat", "a");
     if (fptr == NULL) {
         printf("Error opening file");
         return 1;
@@ -31,3 +31,4 @@ int main() {
 
     return 0;
 }
+
